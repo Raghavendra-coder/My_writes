@@ -58,7 +58,7 @@ const badhaDo = () => {
         <div className="main_note" >
           <input className="inp" type="text" placeholder={caption}  
              autoComplete="off" name="title" value={note.title} onChange={inputEvent} 
-             onClick={badhaDo} />
+             onClick={badhaDo} maxLength="15"/>
 
             {expand ? <textarea className="txt" row="" columns=""
              placeholder={content}  name="text" value={note.text} onChange={inputEvent}/> : null}
